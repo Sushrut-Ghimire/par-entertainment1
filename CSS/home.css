@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: rgb(170, 167, 167);
+}
+
+.container{
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../IMAGES/guitar.jpg);
+}
+
+.container img{
+    margin-top: 25vh;
+    display: block;
+    opacity: 0.5;
+    width: 30vh;
+    height: auto;
+}
+
+.container p{
+    margin-top: -30vh;
+    text-align: center;
+    color: rgb(255, 0, 166);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.A-vision{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient( rgb(26, 26, 26), rgb(170, 167, 167));
+}
+
+.A-vision img{
+    height: 70vh;
+    margin-top: -3vh;
+    margin-left: -3vw;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.A-vision img.active{
+    opacity: 1;
+    transition: all 1s linear;
+}
+
+.A-vision h2{
+    font-family: 'Times New Roman', Times, serif;
+    margin-right: 2vw;
+    margin-top: 4vh;
+    font-size: 6vh;
+    text-align: justify;
+    text-justify: distribute;
+}
+
+.A-vision p{
+    font-family: 'Times New Roman', Times, serif;
+    margin-right: 4vw;
+    font-size: 3.5vh;
+    text-align: justify;
+    text-justify: distribute;
+}
+
+.description h2{
+    transform: translateX(+100vw);
+    color: white;
+}
+
+.description h2.active{
+    transform: translateX(0);
+    transition: all 0.75s ease;
+    color: rgb(255, 0, 166);
+}
+
+.description p{
+     transform: translateX(+100vw)
+}
+
+.description p.active{
+    transform: translateX(0);
+    transition: all 1.5s ease;
+}
+
+.things{
+    padding: 2vw;
+    width: 100vw;
+    position: relative;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1vw;
+    background-image: linear-gradient( rgb(170, 167, 167), rgb(26, 26, 26));
+
+}
+
+.things a{
+    text-decoration: none;
+}
+
+.A{
+    width: 30vw;
+    height: 50vh;
+    border: 5px solid rgb(255, 0, 234);
+    display: grid;
+    place-items: center;
+    transition: all 0.6s ease;
+    transform: translateY(30vw);
+    opacity: 0;
+    margin-bottom: 4vh;
+}
+
+.A.active{
+    transform: translateY(0);
+    opacity: 1;
+    transition: 0.5s ease-in;
+}
+
+.A h1{
+    position: absolute;
+    text-align: center;
+    color: white;
+}
+
+.A p{
+    transform: translateY(-17vh);
+    font-size: 26px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: none;
+    text-decoration-line: none;
+    color: linear;
+    opacity: 0;
+}
+
+.A:hover{
+    transform: translateY(-3vw);
+    transition: all 0.6s ease;
+    background-color: rgb(255, 0, 166);
+}
+
+
+
+
+
