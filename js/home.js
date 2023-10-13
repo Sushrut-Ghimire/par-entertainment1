@@ -19,7 +19,7 @@ document.addEventListener('scroll', () => {
     const nav = document.querySelector('nav');
     var windowheight = window.innerHeight;
 
-    if (window.scrollY > windowheight - 700){
+    if (window.scrollY > 10){
         nav.classList.add('active');
     }
 
