@@ -15,7 +15,7 @@ body{
     place-items: center;
     width: 100vw;
     height: 100vh;
-    background-image: url(../IMAGES/guitar.jpg);
+    background-image: url(../IMAGES/guitar.svg);
     background-repeat: no-repeat;
     background-size: cover, contain;
 }
@@ -34,7 +34,7 @@ body{
     color: rgb(255, 0, 166);
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 4vh;
 }
 
 .A-vision{
@@ -110,7 +110,7 @@ body{
     text-decoration: none;
 }
 
-.A{
+#A{
     width: 30vw;
     height: 50vh;
     border: 5px solid rgb(255, 0, 234);
@@ -122,34 +122,82 @@ body{
     margin-bottom: 4vh;
 }
 
-.A.active{
+#A.active{
     transform: translateY(0);
     opacity: 1;
-    transition: 0.5s ease-in;
+    transition: 0.45s ease-in;
+}
+
+#B{
+    width: 30vw;
+    height: 50vh;
+    border: 5px solid rgb(255, 0, 234);
+    display: grid;
+    place-items: center;
+    transition: all 0.6s ease;
+    transform: translateY(30vw);
+    opacity: 0;
+    margin-bottom: 4vh;
+}
+
+#B.active{
+    transform: translateY(0);
+    opacity: 1;
+    transition: 0.66s ease-in;
+}
+
+#C{
+    width: 30vw;
+    height: 50vh;
+    border: 5px solid rgb(255, 0, 234);
+    display: grid;
+    place-items: center;
+    transition: all 0.6s ease;
+    transform: translateY(30vw);
+    opacity: 0;
+    margin-bottom: 4vh;
+}
+
+#C.active{
+    transform: translateY(0);
+    opacity: 1;
+    transition: 0.99s ease-in;
 }
 
 .A h1{
     position: absolute;
     text-align: center;
     color: white;
+    font-size: 4vh;
 }
 
 .A p{
     transform: translateY(-17vh);
-    font-size: 26px;
+    font-size: 3.5vh;
     font-family: 'Times New Roman', Times, serif;
     text-transform: none;
     text-decoration-line: none;
-    color: linear;
+    color: black;
     opacity: 0;
 }
 
-.A:hover{
+#A:hover{
     transform: translateY(-3vw);
     transition: all 0.6s ease;
     background-color: rgb(255, 0, 166);
 }
 
+#B:hover{
+    transform: translateY(-3vw);
+    transition: all 0.6s ease;
+    background-color: rgb(255, 0, 166);
+}
+
+#C:hover{
+    transform: translateY(-3vw);
+    transition: all 0.6s ease;
+    background-color: rgb(255, 0, 166);
+}
 
 
 

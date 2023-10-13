@@ -17,13 +17,12 @@ typeWriter();
 
 document.addEventListener('scroll', () => {
     const nav = document.querySelector('nav');
-    var windowheight = window.innerHeight;
 
-    if (window.scrollY > 10){
+    if (window.scrollY > 5){
         nav.classList.add('active');
     }
 
-    else{
+    if(window.scrollY < 15){
         nav.classList.remove('active');
     }
 })
